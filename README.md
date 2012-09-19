@@ -12,12 +12,15 @@ a short presentation, we'll quickly be writing code and then you're on your own 
 
 **Level:** Intermediate, comfort with programming required
 
-### Examples
-* Finding out how much your neighbors pay on their water bill (scraping Baltimore City site)
+### Example 1 - read your water bill
+
+Find out how much your neighbors pay on their water bills (scraping Baltimore City site)
 
     ruby -I. water.rb
 
-* Viewing your GPS-encoded photos on a map (reading EXIF data from jpg images, such as from an iPhone camera)
+### Example 2 - map GPS encoded photos
+
+View your GPS-encoded photos on a map (reading EXIF data from jpg images, such as from an iPhone camera)
 
     ruby photos.rb > my_photos.html
     (open browser to view map)
