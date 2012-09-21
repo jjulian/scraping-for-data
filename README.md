@@ -24,3 +24,10 @@ View your GPS-encoded photos on a map (reading EXIF data from jpg images, such a
 
     ruby photos.rb > my_photos.html
     (open browser to view map)
+
+### Example 3 - Dave Troy's Tweets in Baltimore script
+
+Capture tweets within a lat/long bounding box in real-time using the Twitter Streaming API. [script](https://gist.github.com/3742889)
+
+    git clone https://gist.github.com/3742889
+    ruby stream.rb
