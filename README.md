@@ -31,3 +31,9 @@ Capture tweets within a lat/long bounding box in real-time using the Twitter Str
 
     git clone https://gist.github.com/3742889
     ruby stream.rb
+
+### Example 4 - Using [Rickshaw](http://code.shutterstock.com/rickshaw/) to graph data
+
+Format your data, insert into web page, see visualization
+
+    open rickshaw/rickshaw.html in a browser
