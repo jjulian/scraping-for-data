@@ -1,6 +1,7 @@
 # Pull GPS info from a directory of images, and output an html page
 # that uses the Google Maps API to show them on a map.
 
+require 'rubygems'
 require 'exifr'
 require 'json'
 require 'erb'
