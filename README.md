@@ -16,7 +16,7 @@ a short presentation, we'll quickly be writing code and then you're on your own 
 
 Find out how much your neighbors pay on their water bills (scraping Baltimore City site)
 
-    ruby -I. water.rb
+    ruby water.rb
 
 ### Example 2 - map GPS encoded photos
 
