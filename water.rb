@@ -1,5 +1,5 @@
-# Scrape the Baltimore city government website to get the details of a
-# water bill for specific addresses.
+# Scrape the Baltimore city government website to get the details of
+# water bills for specific addresses.
 addresses = (1..3).map { |num| "12%.2d William St" % num }
 
 require 'rubygems'
@@ -22,6 +22,10 @@ bills = addresses.map do |address|
     name = row.css('th').inner_text.strip.downcase.gsub(':','').gsub(' ', '_')
     val = row.css('td span').inner_text.strip
     water_bill[name] = val
+  end
+  water_bill.keys.each do |k|
+    water_bill[k] = water_bill[k].sub('$','') if k =~ /_amount$/ || k =~ /_balance$/
+    water_bill[k] = Date.strptime(water_bill[k], "%m/%d/%Y") if k =~ /_date$/
   end
   water_bill
 end.reject { |b| b.empty? }
